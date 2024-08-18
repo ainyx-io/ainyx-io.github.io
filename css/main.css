@@ -713,7 +713,34 @@ p.section-text {
   color: rgba(255, 255, 255, 0.7);
   margin-top: 3.6rem;
 }
+.footer p {
+  font: normal 400 1.6rem/1.2 "Oswald", sans-serif;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
 
+.footer a {
+  font: normal 400 1.6rem/1.2 "Oswald", sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+}
+.no-touch .footer a:hover {
+  color: #00dbde;
+}
+.footer i {
+  color: #fc466b;
+}
+.footer i::before {
+  background: -webkit-linear-gradient(-45deg, #fc466b 0%, #00dbde 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media only screen and (min-width: 768px) {
+  .footer p, .footer a {
+    font-size: 1.8rem;
+  }
+}
 /* ------------------------------------------------*/
 /* Typography End */
 /* ------------------------------------------------*/
@@ -2998,6 +3025,31 @@ form .inputs-description {
 /* ------------------------------------------------*/
 /* Contact Data End */
 /* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Footer Start */
+/* ------------------------------------------------*/
+.footer {
+  position: relative;
+  padding: 5rem -moz-calc(10% - 1.5rem);
+  padding: 5rem calc(10% - 1.5rem);
+  text-align: center;
+}
+@media only screen and (min-width: 1200px) {
+  .footer {
+    padding: 5rem 8.5rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .footer {
+    padding: 6rem 10.5rem;
+  }
+}
+
+/* ------------------------------------------------*/
+/* Footer End */
+/* ------------------------------------------------*/
+
 /* ------------------------------------------------*/
 /* Google Map Start */
 /* ------------------------------------------------*/

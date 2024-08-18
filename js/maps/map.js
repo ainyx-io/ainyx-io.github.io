@@ -22,7 +22,7 @@ $(function() {
   // Insert Your Google Map Parameters
   var latitude = 12.959043,
     longitude = 77.646849,
-    map_zoom = 14;
+    map_zoom = 18;
   // Google Map Custom Marker Icon
   var is_internetExplorer11= navigator.userAgent.toLowerCase().indexOf('trident') > -1;
   var marker_url = ( is_internetExplorer11 ) ? 'img/location/location.png' : 'img/location/location.svg';
